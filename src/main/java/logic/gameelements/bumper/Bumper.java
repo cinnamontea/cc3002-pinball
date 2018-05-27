@@ -1,6 +1,6 @@
-package main.java.logic.gameelements.bumper;
+package logic.gameelements.bumper;
 
-import main.java.logic.gameelements.Hittable;
+import logic.gameelements.Hittable;
 
 /**
  * Interface that represents operations related to a bumper behavior.
@@ -33,4 +33,10 @@ public interface Bumper extends Hittable {
      * Downgrades a bumper making {@link #isUpgraded()} return false.
      */
     void downgrade();
+
+    /**
+     * Upgrades a bumper without checking the possibility of activating an instance of {@link logic.bonus.ExtraBallBonus}.
+     * @return true if the upgrade was successful, false otherwise
+     */
+    boolean upgradeWithoutBonus();
 }

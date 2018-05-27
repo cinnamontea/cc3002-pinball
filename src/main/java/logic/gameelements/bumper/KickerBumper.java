@@ -1,23 +1,23 @@
-package main.java.logic.gameelements.bumper;
+package logic.gameelements.bumper;
 
-public class KickerBumper implements Bumper{
+import java.util.Random;
 
-    public int hit(){
-        return 0;
-    }
-    public int getScore(){
-        return 0;
-    }
-    public int remainingHitsToUpgrade(){
-        return 0;
-    }
-    public boolean isUpgraded(){
-        return false;
-    }
-    public void upgrade(){
+/**
+ * This class seriously needs some kind of explanation.
+ * @author sofia.castro
+ */
+public class KickerBumper extends AbstractBumper{
 
+    public KickerBumper() {
+        baseScore = 500;
+        hitsToUp = 5;
+        multiplier = 1;
+        upgradedMultiplier = 2;
+        hitCounter = 0;
+        random = new Random();
     }
-    public void downgrade(){
-
+    public KickerBumper(long seed) {
+        this();
+        random = new Random(seed);
     }
 }

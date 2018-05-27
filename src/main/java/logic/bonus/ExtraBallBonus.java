@@ -1,12 +1,19 @@
-package main.java.logic.bonus;
+package logic.bonus;
 
-public class ExtraBallBonus implements Bonus{
+import controller.Game;
 
-    public int timesTriggered(){
-        return 0;
+/**
+ * This class seriously needs some kind of explanation.
+ * @author sofia.castro
+ */
+public class ExtraBallBonus extends AbstractBonus{
+    public ExtraBallBonus(){
+        score = 0;
     }
 
-    public void trigger(controller.Game game){
-
+    public void trigger(Game game){
+        timesTriggered++;
+        game.wonABall();
+        notifyObservers(score);
     }
 }

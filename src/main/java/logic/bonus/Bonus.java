@@ -1,4 +1,4 @@
-package main.java.logic.bonus;
+package logic.bonus;
 
 import controller.Game;
 
@@ -10,7 +10,7 @@ import controller.Game;
  * @see JackPotBonus
  * @see DropTargetBonus
  */
-public interface Bonus {
+public interface Bonus{
     /**
      * Gets the number of times the bonus has been triggered.
      *

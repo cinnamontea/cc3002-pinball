@@ -1,16 +1,21 @@
-package main.java.logic.gameelements.target;
+package logic.gameelements.target;
 
-public class SpotTarget implements Target {
+/**
+ * This class seriously needs some kind of explanation.
+ * @author sofia.castro
+ */
+public class SpotTarget extends AbstractTarget {
+
+    public SpotTarget(){
+        active = true;
+        score = 0;
+    }
+
     public int hit(){
+        if (isActive()){
+            notifyObservers(score);
+            active = false;
+        }
         return 0;
-    }
-    public int getScore(){
-        return 0;
-    }
-    public boolean isActive(){
-        return false;
-    }
-    public void reset(){
-
     }
 }

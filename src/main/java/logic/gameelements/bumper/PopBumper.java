@@ -1,23 +1,23 @@
-package main.java.logic.gameelements.bumper;
+package logic.gameelements.bumper;
 
-public class PopBumper implements Bumper{
+import java.util.Random;
 
-    public int hit(){
-        return 0;
-    }
-    public int getScore(){
-        return 0;
-    }
-    public int remainingHitsToUpgrade(){
-        return 0;
-    }
-    public boolean isUpgraded(){
-        return false;
-    }
-    public void upgrade(){
+/**
+ * This class seriously needs some kind of explanation.
+ * @author sofia.castro
+ */
+public class PopBumper extends AbstractBumper{
 
+    public PopBumper() {
+        baseScore = 100;
+        hitsToUp = 3;
+        multiplier = 1;
+        upgradedMultiplier = 3;
+        hitCounter = 0;
+        random = new Random();
     }
-    public void downgrade(){
-
+    public PopBumper(long seed) {
+        this();
+        random = new Random(seed);
     }
 }

@@ -1,6 +1,6 @@
-package main.java.logic.gameelements.target;
+package logic.gameelements.target;
 
-import main.java.logic.gameelements.Hittable;
+import logic.gameelements.Hittable;
 
 /**
  * Interface that represents operations related to a target behavior.

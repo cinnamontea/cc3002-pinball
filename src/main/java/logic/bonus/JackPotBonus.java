@@ -1,13 +1,18 @@
-package main.java.logic.bonus;
+package logic.bonus;
 
-public class JackPotBonus implements Bonus{
+import controller.Game;
 
-    public int timesTriggered(){
-        return 0;
+/**
+ * This class seriously needs some kind of explanation.
+ * @author sofia.castro
+ */
+public class JackPotBonus extends AbstractBonus{
+    public JackPotBonus(){
+        score = 100000;
     }
 
-    public void trigger(controller.Game game){
-
+    public void trigger(Game game){
+        timesTriggered++;
+        notifyObservers(score);
     }
 }
-
