@@ -26,6 +26,13 @@ public interface Table {
     int getNumberOfDropTargets();
 
     /**
+     * Gets the number of {@link logic.gameelements.bumper.PopBumper} in the table.
+     *
+     * @return the number of PopBumpers in the table
+     */
+    int getNumberOfPopBumpers();
+
+    /**
      * Gets the number of {@link logic.gameelements.target.DropTarget} that are currently dropped or inactive.
      *
      * @return the number of DropTargets that are currently inactive

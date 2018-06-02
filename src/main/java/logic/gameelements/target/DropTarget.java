@@ -1,5 +1,7 @@
 package logic.gameelements.target;
 
+import controller.Game;
+
 import java.util.Random;
 
 /**
@@ -27,12 +29,20 @@ public class DropTarget extends AbstractTarget {
 
     public int hit(){
         if (isActive()){
-            if (lucky())
-                notifyObservers(true);
             active = false;
-            notifyObservers(score);
+            setChanged();
+            notifyObservers();
             return score;
         }
         return 0;
+    }
+
+    public void visit(Game game){
+        setChanged();
+        notifyObservers(score);
+        if (lucky())
+            game.getExtraBallBonus().trigger(game);
+        if (game.getCurrentTable().getCurrentlyDroppedDropTargets() == game.getCurrentTable().getNumberOfDropTargets())
+            game.getDropTargetBonus().trigger(game);
     }
 }

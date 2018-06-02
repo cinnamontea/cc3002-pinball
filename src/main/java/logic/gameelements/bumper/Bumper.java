@@ -35,8 +35,9 @@ public interface Bumper extends Hittable {
     void downgrade();
 
     /**
-     * Upgrades a bumper without checking the possibility of activating an instance of {@link logic.bonus.ExtraBallBonus}.
+     * Upgrades a bumper without the consequences that this event may trigger in another item, such as activating an
+     * instance of {@link logic.bonus.ExtraBallBonus} or notifying its score to certain {@link controller.Game}.
      * @return true if the upgrade was successful, false otherwise
      */
-    boolean upgradeWithoutBonus();
+    boolean manualUpgrade();
 }

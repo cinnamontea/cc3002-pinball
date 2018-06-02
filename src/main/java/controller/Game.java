@@ -83,12 +83,12 @@ public class Game implements Observer{
         this.currentScore += plus;
     }
 
-    public void setCurrentTable(Table currentTable) {
-        this.currentTable = currentTable;
+    public void setCurrentTable(Table table) {
+        this.currentTable = table;
 
         List<Hittable> hittables = new ArrayList<>();
-        hittables.addAll(currentTable.getBumpers());
-        hittables.addAll(currentTable.getTargets());
+        hittables.addAll(table.getBumpers());
+        hittables.addAll(table.getTargets());
 
         int index = 0;
         while (index < hittables.size()){
@@ -108,36 +108,13 @@ public class Game implements Observer{
     }
 
     public void update(Observable observable, Object arg){
-        this.update(observable, arg);
+        if (arg == null)
+            update(observable);
+        else
+            setCurrentScore((int)arg);
     }
 
-    /*public void update(Table table, int plusScore){ // ???
-        setCurrentScore(plusScore);
-    }*/
-
-    public void update(Bonus bonus, int plusScore){
-        setCurrentScore(plusScore);
-    }
-
-    public void update(SpotTarget target, int plusScore){
-        jackPotBonus.trigger(this);
-    }
-
-    public void update(DropTarget target, int plusScore){
-        setCurrentScore(plusScore);
-        if (currentTable.getCurrentlyDroppedDropTargets() == currentTable.getNumberOfDropTargets())
-            dropTargetBonus.trigger(this);
-    }
-
-    public void update(DropTarget target, boolean bonus){
-        extraBallBonus.trigger(this);
-    }
-
-    public void update(Bumper bumper, int plusScore){
-        setCurrentScore(plusScore);
-    }
-
-    public void update(Bumper bumper, boolean bonus){
-        extraBallBonus.trigger(this);
+    private void update(Observable observable){
+        ((Hittable)observable).visit(this);
     }
 }

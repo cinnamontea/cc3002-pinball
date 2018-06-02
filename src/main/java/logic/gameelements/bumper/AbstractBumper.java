@@ -1,5 +1,8 @@
 package logic.gameelements.bumper;
 
+import controller.Game;
+import logic.gameelements.Visitor;
+
 import java.util.Observable;
 import java.util.Random;
 
@@ -7,7 +10,7 @@ import java.util.Random;
  * This class seriously needs some kind of explanation.
  * @author sofia.castro
  */
-public abstract class AbstractBumper extends Observable implements Bumper {
+public abstract class AbstractBumper extends Observable implements Bumper, Visitor {
     int baseScore;
     int hitsToUp;
     int multiplier;
@@ -20,6 +23,7 @@ public abstract class AbstractBumper extends Observable implements Bumper {
         if (remainingHitsToUpgrade() == 0){
             upgrade();
         }
+        setChanged();
         notifyObservers(this.getScore());
         return getScore();
     }
@@ -38,7 +42,7 @@ public abstract class AbstractBumper extends Observable implements Bumper {
         multiplier = 1;
     }
 
-    public boolean upgradeWithoutBonus(){
+    public boolean manualUpgrade(){
         if (!isUpgraded()){
             multiplier = upgradedMultiplier;
         }
@@ -46,8 +50,13 @@ public abstract class AbstractBumper extends Observable implements Bumper {
     }
 
     public void upgrade(){
-        if (upgradeWithoutBonus() && random.nextInt(10)==7){
-            notifyObservers(true);
+        if (manualUpgrade() && random.nextInt(10)==7){
+            setChanged();
+            notifyObservers();
         }
+    }
+
+    public void visit(Game game){
+        game.getExtraBallBonus().trigger(game);
     }
 }

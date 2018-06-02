@@ -13,6 +13,7 @@ public class JackPotBonus extends AbstractBonus{
 
     public void trigger(Game game){
         timesTriggered++;
+        setChanged();
         notifyObservers(score);
     }
 }

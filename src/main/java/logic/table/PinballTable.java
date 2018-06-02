@@ -20,13 +20,10 @@ public class PinballTable implements Table{
 
     private List<Bumper> bumpers;
     private List<Target> targets;
-    private Random random = new Random();
-
-    public PinballTable(String name){
-        this(name,0,0,0,0);
-    }
+    private Random random;
 
     public PinballTable(String name, int numberOfBumpers, double prob, int numberOfSpotTargets, int numberOfDropTargets){
+        this.random = new Random();
         this.name = name;
         this.numberOfBumpers = numberOfBumpers;
         this.numberOfSpotTargets = numberOfSpotTargets;
@@ -34,6 +31,30 @@ public class PinballTable implements Table{
         isPlayable = false;
         setTargets();
         setBumpers(prob);
+    }
+
+    public PinballTable(String name, int numberOfBumpers, double prob, int numberOfSpotTargets,
+                        int numberOfDropTargets, long seed){
+        this.random = new Random(seed);
+        this.name = name;
+        this.numberOfBumpers = numberOfBumpers;
+        this.numberOfSpotTargets = numberOfSpotTargets;
+        this.numberOfDropTargets = numberOfDropTargets;
+        isPlayable = false;
+        setTargets();
+        setBumpers(prob);
+    }
+
+    public PinballTable(List<Bumper> bumperList,List<Target> targetList,int numberOfDT){
+        this.random = new Random();
+        this.name = "Lucky Hittables";
+        this.numberOfBumpers = bumperList.size();
+        this.numberOfDropTargets = numberOfDT;
+        this.numberOfSpotTargets = targetList.size()-numberOfDT;
+
+        this.isPlayable = false;
+        this.bumpers = bumperList;
+        this.targets = targetList;
     }
 
     public String getTableName() {
@@ -85,7 +106,7 @@ public class PinballTable implements Table{
             index++;
         }
     }*/
-    public void resetDropTargets() { // DropTargets are the first numOfDT elements of targets list.
+    public void resetDropTargets() { // DropTargets are the first <numberOfDropTargets> elements of targets list.
         int index = 0;
         while (index < numberOfDropTargets) {
             if (!targets.get(index).isActive())
@@ -97,7 +118,7 @@ public class PinballTable implements Table{
     public void upgradeAllBumpers() {
         int index = 0;
         while (index < bumpers.size()){
-            bumpers.get(index).upgradeWithoutBonus();
+            bumpers.get(index).manualUpgrade();
             index++;
         }
     }
@@ -146,7 +167,7 @@ public class PinballTable implements Table{
         }
     }
 
-    public void setSeed(long seed) { // Javadoc missing
+    public void setSeed(long seed) { // Javadoc missing. Not necessary?
         random.setSeed(seed);
     }
 

@@ -14,6 +14,7 @@ public class ExtraBallBonus extends AbstractBonus{
     public void trigger(Game game){
         timesTriggered++;
         game.wonABall();
+        setChanged();
         notifyObservers(score);
     }
 }

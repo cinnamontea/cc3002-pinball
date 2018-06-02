@@ -1,5 +1,7 @@
 package logic.gameelements;
 
+import controller.Game;
+
 import java.util.Observer;
 
 /**
@@ -11,7 +13,7 @@ import java.util.Observer;
  * @see logic.gameelements.bumper.Bumper
  * @see logic.gameelements.target.Target
  */
-public interface Hittable{
+public interface Hittable {
     /**
      * Defines that an object have been hit.
      * Implementations should consider the events that a hit to an object can trigger.
@@ -28,4 +30,6 @@ public interface Hittable{
     int getScore();
 
     void addObserver(Observer o);
+
+    void visit(Game game);
 }

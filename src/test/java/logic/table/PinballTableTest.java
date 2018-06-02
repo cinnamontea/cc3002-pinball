@@ -22,10 +22,10 @@ public class PinballTableTest {
 
     @Before
     public void setUp() {
-        table = new PinballTable("One of each", 2, 0, 1, 1);
-        table.setSeed(38439);
+        table = new PinballTable("One of each", 2, 0.5, 1, 1,38439);
+        /*table.setSeed(38439);
         table.setTargets();
-        table.setBumpers(0.5);
+        table.setBumpers(0.5);*/
         popBumper = (PopBumper) table.getBumpers().get(0);
         kickerBumper = (KickerBumper) table.getBumpers().get(1);
         dropTarget = (DropTarget) table.getTargets().get(0);
