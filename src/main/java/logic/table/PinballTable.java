@@ -2,13 +2,14 @@ package logic.table;
 
 import logic.gameelements.bumper.*;
 import logic.gameelements.target.*;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
 /**
- * This class seriously needs some kind of explanation.
+ * A class that contains the group of game elements that form a
+ * table of a Pinball game.
+ *
  * @author sofia.castro
  */
 public class PinballTable implements Table{
@@ -22,6 +23,15 @@ public class PinballTable implements Table{
     private List<Target> targets;
     private Random random;
 
+    /**
+     * Default PinballTable constructor.
+     *
+     * @param name                 the table's name
+     * @param numberOfBumpers      amount of {@link Bumper} on this particular table
+     * @param prob                 probability of generating a {@link PopBumper} kind of {@code Bumper}
+     * @param numberOfSpotTargets  amount of {@link SpotTarget} on this particular table
+     * @param numberOfDropTargets  amount of {@link DropTarget} on this particular table
+     */
     public PinballTable(String name, int numberOfBumpers, double prob, int numberOfSpotTargets, int numberOfDropTargets){
         this.random = new Random();
         this.name = name;
@@ -33,6 +43,17 @@ public class PinballTable implements Table{
         setBumpers(prob);
     }
 
+    /**
+     * A PinballTable constructor.
+     * Useful for testing tables with a fixed amount of bumpers.
+     *
+     * @param name                 the table's name
+     * @param numberOfBumpers      amount of {@link Bumper} on this particular table
+     * @param prob                 probability of generating a {@link PopBumper} kind of {@code Bumper}
+     * @param numberOfSpotTargets  amount of {@link SpotTarget} on this particular table
+     * @param numberOfDropTargets  amount of {@link DropTarget} on this particular table
+     * @param seed                 the seed used to generate random numbers
+     */
     public PinballTable(String name, int numberOfBumpers, double prob, int numberOfSpotTargets,
                         int numberOfDropTargets, long seed){
         this.random = new Random(seed);
@@ -45,6 +66,15 @@ public class PinballTable implements Table{
         setBumpers(prob);
     }
 
+    /**
+     * A PinballTable constructor that receives the game elements as lists.
+     * Useful for testing particular sets of game elements so their random
+     * characteristics can be determined beforehand.
+     *
+     * @param bumperList a list of {@link Bumper} elements to be added to the table
+     * @param targetList a list of {@link Target} elements to be added to the table
+     * @param numberOfDT the number of {@link DropTarget} elements in the list
+     */
     public PinballTable(List<Bumper> bumperList,List<Target> targetList,int numberOfDT){
         this.random = new Random();
         this.name = "Lucky Hittables";
@@ -65,21 +95,10 @@ public class PinballTable implements Table{
         return numberOfDropTargets;
     }
 
-    /*public int getCurrentlyDroppedDropTargets() {
+    public int getCurrentlyDroppedDropTargets() {
         int inactiveDropTargets = 0;
         int index = 0;
-        while (index < targets.size()) {
-            Target target = targets.get(index);
-            if (target.getScore() == 300 && !target.isActive()) {
-                inactiveDropTargets++; // DropTargets can be distinguished by their score (300 points).
-            }
-            index++;
-        }
-        return inactiveDropTargets;
-    }*/
-    public int getCurrentlyDroppedDropTargets() { // DropTargets are the first numOfDT elements of targets list.
-        int inactiveDropTargets = 0;
-        int index = 0;
+        // DropTargets are the first [numberOfDropTargets] elements of the [targets] list.
         while (index < numberOfDropTargets){
             if (!targets.get(index).isActive())
                 inactiveDropTargets++;
@@ -96,18 +115,9 @@ public class PinballTable implements Table{
         return targets;
     }
 
-    /*public void resetDropTargets() {
+    public void resetDropTargets() {
         int index = 0;
-        while (index < targets.size()) {
-            Target target = targets.get(index);
-            if (target.getScore() == 300 && !target.isActive()) {
-                target.reset();
-            }
-            index++;
-        }
-    }*/
-    public void resetDropTargets() { // DropTargets are the first <numberOfDropTargets> elements of targets list.
-        int index = 0;
+        // DropTargets are the first [numberOfDropTargets] elements of the [targets] list.
         while (index < numberOfDropTargets) {
             if (!targets.get(index).isActive())
                 targets.get(index).reset();
@@ -118,12 +128,13 @@ public class PinballTable implements Table{
     public void upgradeAllBumpers() {
         int index = 0;
         while (index < bumpers.size()){
+            // manualUpgrade() ensures that it won't activate bonuses.
             bumpers.get(index).manualUpgrade();
             index++;
         }
     }
 
-    public boolean isPlayableTable() { // Needs Observer/Observable relation *********************
+    public boolean isPlayableTable() {
         return isPlayable;
     }
 
@@ -131,14 +142,20 @@ public class PinballTable implements Table{
         int numberOfPopBumpers = 0;
         int index = 0;
         while (index < numberOfBumpers){
-            if (bumpers.get(index).getScore()==100)
+            // PopBumpers are the only Bumpers that give less than 500 points even when upgraded.
+            if (bumpers.get(index).getScore()<500)
                 numberOfPopBumpers++;
             index++;
         }
         return numberOfPopBumpers;
     }
 
-    protected void setTargets() { // Javadoc missing
+    /**
+     * Sets the list of {@link Target} elements in this table.
+     * The first {@code numberOfDropTargets} items are {@link DropTarget},
+     * and the rest {@link SpotTarget}.
+     */
+    private void setTargets() {
         targets = new ArrayList<>();
         int index = 0;
         while (index < numberOfDropTargets){
@@ -152,7 +169,13 @@ public class PinballTable implements Table{
         }
     }
 
-    protected void setBumpers(double prob) { // Javadoc missing
+    /**
+     * Sets the list of {@link Bumper} elements in this table.
+     * The amount of each type is decided randomly, just as their positions in the list.
+     *
+     * @param prob probability of generating a {@link PopBumper}
+     */
+    void setBumpers(double prob) {
         bumpers = new ArrayList<>();
         int index = 0;
         while (index < numberOfBumpers){
@@ -167,13 +190,11 @@ public class PinballTable implements Table{
         }
     }
 
-    public void setSeed(long seed) { // Javadoc missing. Not necessary?
-        random.setSeed(seed);
-    }
-
+    /**
+     * Sets the status of this table to "playable".
+     */
     public void setPlayability(){
         this.isPlayable = true;
     }
-
 }
 

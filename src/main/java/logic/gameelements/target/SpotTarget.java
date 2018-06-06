@@ -3,11 +3,14 @@ package logic.gameelements.target;
 import controller.Game;
 
 /**
- * This class seriously needs some kind of explanation.
+ * A class that represents the behaviour of SpotTargets.
+ *
  * @author sofia.castro
  */
 public class SpotTarget extends AbstractTarget {
-
+    /**
+     * SpotTarget's constructor.
+     */
     public SpotTarget(){
         active = true;
         score = 0;
@@ -19,11 +22,11 @@ public class SpotTarget extends AbstractTarget {
             notifyObservers();
             active = false;
         }
-        return 0;
+        return score;
     }
 
     public void visit(Game game) {
-        // SpotTarget doesn't give any points so I can omit this notification.
+        // SpotTarget doesn't give any points by itself so I can omit this notification.
         game.getJackPotBonus().trigger(game);
     }
 }

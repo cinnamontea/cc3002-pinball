@@ -29,7 +29,7 @@ public class KickerBumperTest {
 
     @Test
     public void downgrade(){
-        bumper.upgrade();
+        bumper.manualUpgrade();
         assertTrue(bumper.isUpgraded());
         assertEquals(0,bumper.remainingHitsToUpgrade());
         bumper.hit(); // (Just to check if the counter works properly)
@@ -42,7 +42,7 @@ public class KickerBumperTest {
     public void upgrade() {
         // Can't check bonuses here, so this will only test that both upgrades work.
         assertFalse(bumper.isUpgraded());
-        bumper.upgrade();
+        bumper.manualUpgrade();
         assertTrue(bumper.isUpgraded());
     }
 }

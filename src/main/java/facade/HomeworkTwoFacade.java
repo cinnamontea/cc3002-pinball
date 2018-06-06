@@ -5,7 +5,6 @@ import logic.bonus.Bonus;
 import logic.gameelements.bumper.Bumper;
 import logic.gameelements.target.Target;
 import logic.table.Table;
-
 import java.util.List;
 
 /**
@@ -21,6 +20,13 @@ public class HomeworkTwoFacade {
      * @see Game
      */
     private Game game;
+
+    /**
+     * HomeworkTwoFacade's constructor.
+     */
+    public HomeworkTwoFacade(){
+        game = new Game(); // Each game starts with 3 balls (currently determined in Game's constructor).
+    }
 
     /**
      * Gets whether the current table is playable or not.
@@ -63,7 +69,7 @@ public class HomeworkTwoFacade {
      *
      * @param name            the name of the table
      * @param numberOfBumpers the number of bumpers in the table
-     * @param prob            the probability a {@link logic.gameelements.bumper.PopBumper}
+     * @param prob            the probability of a {@link logic.gameelements.bumper.PopBumper}
      * @return a new table determined by the parameters
      */
     public Table newPlayableTableWithNoTargets(String name, int numberOfBumpers, double prob) {
@@ -75,7 +81,7 @@ public class HomeworkTwoFacade {
      *
      * @param name                the name of the table
      * @param numberOfBumpers     the number of bumpers in the table
-     * @param prob                the probability a {@link logic.gameelements.bumper.PopBumper}
+     * @param prob                the probability of a {@link logic.gameelements.bumper.PopBumper}
      * @param numberOfTargets     the number of {@link logic.gameelements.target.SpotTarget}
      * @param numberOfDropTargets the number of {@link logic.gameelements.target.DropTarget}
      * @return a new table determined by the parameters

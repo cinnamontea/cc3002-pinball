@@ -6,6 +6,7 @@ import logic.gameelements.Hittable;
  * Interface that represents operations related to a bumper behavior.
  *
  * @author Juan-Pablo Silva
+ * @author sofia.castro
  * @see KickerBumper
  * @see PopBumper
  */

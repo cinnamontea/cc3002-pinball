@@ -3,10 +3,16 @@ package logic.bonus;
 import controller.Game;
 
 /**
- * This class seriously needs some kind of explanation.
+ * A class that represents the behaviour of ExtraBall bonuses.
+ * This kind of bonus is characterized by awarding one additional ball
+ * to the game where it's been activated.
+ *
  * @author sofia.castro
  */
 public class ExtraBallBonus extends AbstractBonus{
+    /**
+     * ExtraBallBonus' constructor.
+     */
     public ExtraBallBonus(){
         score = 0;
     }
@@ -15,6 +21,6 @@ public class ExtraBallBonus extends AbstractBonus{
         timesTriggered++;
         game.wonABall();
         setChanged();
-        notifyObservers(score);
+        notifyObservers(score); // Not necessary, but I like to keep the same structure from the other bonuses.
     }
 }
