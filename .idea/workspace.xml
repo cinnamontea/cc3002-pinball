@@ -3,41 +3,33 @@
   <component name="ChangeListManager">
     <list default="true" id="fbb67918-40e8-4e04-86b0-a2dcc37ef619" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/facade/HomeworkTwoFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/facade/HomeworkTwoFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/bonus/AbstractBonus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/bonus/AbstractBonus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/bonus/DropTargetBonus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/bonus/DropTargetBonus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/bonus/ExtraBallBonus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/bonus/ExtraBallBonus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/bonus/JackPotBonus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/bonus/JackPotBonus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/gameelements/Hittable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/gameelements/Hittable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/gameelements/Visitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/gameelements/Visitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/AbstractBumper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/AbstractBumper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/Bumper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/Bumper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/KickerBumper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/KickerBumper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/PopBumper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/PopBumper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/gameelements/target/AbstractTarget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/gameelements/target/AbstractTarget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/gameelements/target/DropTarget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/gameelements/target/DropTarget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/gameelements/target/SpotTarget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/gameelements/target/SpotTarget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/table/PinballTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/table/PinballTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/logic/gameelements/bumper/KickerBumperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/logic/gameelements/bumper/KickerBumperTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/logic/gameelements/bumper/PopBumperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/logic/gameelements/bumper/PopBumperTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/facade/HomeworkTwoFacade.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/facade/HomeworkTwoFacade.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logic/bonus/AbstractBonus.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logic/bonus/AbstractBonus.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logic/bonus/DropTargetBonus.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logic/bonus/DropTargetBonus.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logic/bonus/ExtraBallBonus.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logic/bonus/ExtraBallBonus.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logic/bonus/JackPotBonus.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logic/bonus/JackPotBonus.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logic/gameelements/Hittable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logic/gameelements/Hittable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logic/gameelements/bumper/AbstractBumper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logic/gameelements/bumper/AbstractBumper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logic/gameelements/bumper/KickerBumper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logic/gameelements/bumper/KickerBumper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logic/gameelements/bumper/PopBumper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logic/gameelements/bumper/PopBumper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logic/gameelements/target/AbstractTarget.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logic/gameelements/target/AbstractTarget.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logic/gameelements/target/DropTarget.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logic/gameelements/target/DropTarget.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logic/gameelements/target/SpotTarget.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logic/gameelements/target/SpotTarget.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logic/table/PinballTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logic/table/PinballTable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/logic/gameelements/bumper/KickerBumperTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/logic/gameelements/bumper/KickerBumperTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/logic/gameelements/bumper/PopBumperTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/logic/gameelements/bumper/PopBumperTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CC3002-Tarea2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CC3002-Tarea2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/Game.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/facade/HomeworkTwoFacade.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logic/bonus/AbstractBonus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logic/bonus/Bonus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logic/bonus/DropTargetBonus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logic/bonus/ExtraBallBonus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logic/bonus/JackPotBonus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logic/gameelements/Hittable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logic/gameelements/Visitor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logic/gameelements/bumper/AbstractBumper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logic/gameelements/bumper/Bumper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logic/gameelements/bumper/KickerBumper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logic/gameelements/bumper/PopBumper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logic/gameelements/target/AbstractTarget.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logic/gameelements/target/DropTarget.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logic/gameelements/target/SpotTarget.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logic/gameelements/target/Target.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logic/table/PinballTable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logic/table/Table.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/controller/GameTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/logic/gameelements/bumper/KickerBumperTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/logic/gameelements/bumper/PopBumperTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/logic/gameelements/target/DropTargetTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/logic/gameelements/target/SpotTargetTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/logic/table/PinballTableTest.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -53,7 +45,7 @@
       <FILTER>logic.table.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/CC3002_Tarea2$All_in_CC3002_Tarea2__1_.ic" NAME="All in CC3002-Tarea2 (1) Coverage Results" MODIFIED="1527906143071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/CC3002_Tarea2$All_in_CC3002_Tarea2.ic" NAME="All in CC3002-Tarea2 Coverage Results" MODIFIED="1527902066355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/CC3002_Tarea2$All_in_CC3002_Tarea2.ic" NAME="All in CC3002-Tarea2 Coverage Results" MODIFIED="1528262997794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -61,7 +53,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/controller/Game.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="13" column="11" lean-forward="true" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="27" />
+              <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -82,7 +74,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/logic/table/PinballTable.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="573">
-              <caret line="192" lean-forward="true" selection-start-line="192" selection-end-line="192" />
+              <caret line="192" selection-start-line="192" selection-end-line="192" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -94,8 +86,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="464">
-                <caret line="183" lean-forward="true" selection-start-line="183" selection-end-line="183" />
+              <first_editor relative-caret-position="294">
+                <caret line="173" column="13" selection-start-line="173" selection-start-column="13" selection-end-line="173" selection-end-column="13" />
               </first_editor>
               <second_editor />
             </state>
@@ -106,7 +98,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/controller/GameTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="355">
-              <caret line="197" lean-forward="true" selection-start-line="197" selection-end-line="197" />
+              <caret line="197" selection-start-line="197" selection-end-line="197" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -172,7 +164,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="539" />
     <option name="y" value="-8" />
     <option name="width" value="835" />
@@ -194,174 +186,6 @@
               <item name="CC3002-Tarea2" type="b2602c69:ProjectViewProjectNode" />
               <item name="CC3002-Tarea2" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="CC3002-Tarea2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CC3002-Tarea2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CC3002-Tarea2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CC3002-Tarea2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CC3002-Tarea2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CC3002-Tarea2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CC3002-Tarea2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CC3002-Tarea2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CC3002-Tarea2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CC3002-Tarea2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="facade" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CC3002-Tarea2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CC3002-Tarea2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CC3002-Tarea2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CC3002-Tarea2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="bonus" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CC3002-Tarea2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CC3002-Tarea2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="gameelements" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CC3002-Tarea2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CC3002-Tarea2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="gameelements" type="462c0819:PsiDirectoryNode" />
-              <item name="bumper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CC3002-Tarea2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CC3002-Tarea2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="gameelements" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CC3002-Tarea2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CC3002-Tarea2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="table" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CC3002-Tarea2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CC3002-Tarea2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CC3002-Tarea2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CC3002-Tarea2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CC3002-Tarea2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CC3002-Tarea2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CC3002-Tarea2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CC3002-Tarea2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CC3002-Tarea2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CC3002-Tarea2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CC3002-Tarea2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CC3002-Tarea2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="gameelements" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CC3002-Tarea2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CC3002-Tarea2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="gameelements" type="462c0819:PsiDirectoryNode" />
-              <item name="bumper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CC3002-Tarea2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CC3002-Tarea2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="gameelements" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CC3002-Tarea2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CC3002-Tarea2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="table" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CC3002-Tarea2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CC3002-Tarea2" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -378,6 +202,9 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
@@ -405,7 +232,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in CC3002-Tarea2 (1)">
+  <component name="RunManager" selected="JUnit.All in CC3002-Tarea2 (3)">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -426,7 +253,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="All in CC3002-Tarea2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in CC3002-Tarea2 (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CC3002-Tarea2" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -443,20 +270,14 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="GameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in CC3002-Tarea2 (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CC3002-Tarea2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="controller" />
-      <option name="MAIN_CLASS_NAME" value="controller.GameTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="package" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -466,46 +287,17 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="GameTest.extraBallBonusActivation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in CC3002-Tarea2" type="JUnit" factoryName="JUnit">
       <module name="CC3002-Tarea2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="controller" />
-      <option name="MAIN_CLASS_NAME" value="controller.GameTest" />
-      <option name="METHOD_NAME" value="extraBallBonusActivation" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="GameTest.getCurrentScore" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CC3002-Tarea2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="controller" />
-      <option name="MAIN_CLASS_NAME" value="controller.GameTest" />
-      <option name="METHOD_NAME" value="getCurrentScore" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://%MODULE_WORKING_DIR%" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
@@ -551,19 +343,17 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.GameTest" />
-      <item itemvalue="JUnit.GameTest.getCurrentScore" />
-      <item itemvalue="JUnit.GameTest.extraBallBonusActivation" />
+      <item itemvalue="JUnit.All in CC3002-Tarea2 (2)" />
       <item itemvalue="JUnit.All in CC3002-Tarea2" />
       <item itemvalue="JUnit.All in CC3002-Tarea2 (1)" />
+      <item itemvalue="JUnit.All in CC3002-Tarea2 (3)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in CC3002-Tarea2 (3)" />
         <item itemvalue="JUnit.All in CC3002-Tarea2 (1)" />
         <item itemvalue="JUnit.All in CC3002-Tarea2" />
-        <item itemvalue="JUnit.GameTest" />
-        <item itemvalue="JUnit.GameTest.extraBallBonusActivation" />
-        <item itemvalue="JUnit.GameTest.getCurrentScore" />
+        <item itemvalue="JUnit.All in CC3002-Tarea2 (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -589,29 +379,11 @@
       <workItem from="1527880067673" duration="27466000" />
       <workItem from="1528067027785" duration="6519000" />
       <workItem from="1528142099833" duration="25428000" />
-      <workItem from="1528234149548" duration="25581000" />
+      <workItem from="1528234149548" duration="26787000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GameTest_extraBallBonusActivation - 2018.06.01 at 21h 10m 41s.xml">
-      <configuration name="GameTest.extraBallBonusActivation" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameTest - 2018.06.01 at 21h 10m 50s.xml">
-      <configuration name="GameTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameTest - 2018.06.01 at 21h 11m 39s.xml">
-      <configuration name="GameTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_CC3002-Tarea2 - 2018.06.01 at 21h 14m 29s.xml">
-      <configuration name="All in CC3002-Tarea2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_CC3002-Tarea2 - 2018.06.01 at 21h 45m 24s.xml">
-      <configuration name="All in CC3002-Tarea2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_CC3002-Tarea2_(1) - 2018.06.01 at 21h 45m 43s.xml">
-      <configuration name="All in CC3002-Tarea2 (1)" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_CC3002-Tarea2_(1) - 2018.06.01 at 22h 22m 28s.xml">
       <configuration name="All in CC3002-Tarea2 (1)" configurationId="JUnit" />
     </history-entry>
@@ -624,38 +396,56 @@
     <history-entry file="All_in_CC3002-Tarea2_(1) - 2018.06.05 at 21h 05m 30s.xml">
       <configuration name="All in CC3002-Tarea2 (1)" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_CC3002-Tarea2_(2) - 2018.06.06 at 01h 19m 16s.xml">
+      <configuration name="All in CC3002-Tarea2 (2)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_CC3002-Tarea2_(2) - 2018.06.06 at 01h 23m 24s.xml">
+      <configuration name="All in CC3002-Tarea2 (2)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_CC3002-Tarea2 - 2018.06.06 at 01h 29m 19s.xml">
+      <configuration name="All in CC3002-Tarea2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_CC3002-Tarea2 - 2018.06.06 at 01h 30m 02s.xml">
+      <configuration name="All in CC3002-Tarea2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_CC3002-Tarea2 - 2018.06.06 at 01h 31m 13s.xml">
+      <configuration name="All in CC3002-Tarea2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_CC3002-Tarea2 - 2018.06.06 at 01h 32m 27s.xml">
+      <configuration name="All in CC3002-Tarea2" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="191806000" />
+    <option name="totallyTimeSpent" value="193012000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50073206" side_tool="true" weight="0.32913387" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Designer" order="3" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Messages" order="0" weight="0.32913387" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50073206" side_tool="true" weight="0.32913387" />
       <window_info x="0" y="0" width="295" height="544" id="Documentation" order="7" show_stripe_button="false" sideWeight="0.04094488" side_tool="true" weight="0.21888727" />
-      <window_info anchor="right" id="Maven Projects" order="7" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49926794" weight="0.42519686" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49926794" visible="true" weight="0.25354332" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.329429" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info id="Designer" order="3" />
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.9590551" visible="true" weight="0.21888727" />
-      <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="bottom" id="Find" order="2" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
-      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.329429" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -725,13 +515,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="363">
           <caret line="22" column="25" lean-forward="true" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -1110,7 +893,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/logic/table/PinballTable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="573">
-          <caret line="192" lean-forward="true" selection-start-line="192" selection-end-line="192" />
+          <caret line="192" selection-start-line="192" selection-end-line="192" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1120,25 +903,32 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/Game.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="13" column="11" lean-forward="true" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="27" />
+          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/controller/GameTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="355">
-          <caret line="197" lean-forward="true" selection-start-line="197" selection-end-line="197" />
+          <caret line="197" selection-start-line="197" selection-end-line="197" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="464">
-            <caret line="183" lean-forward="true" selection-start-line="183" selection-end-line="183" />
+          <first_editor relative-caret-position="294">
+            <caret line="173" column="13" selection-start-line="173" selection-start-column="13" selection-end-line="173" selection-end-column="13" />
           </first_editor>
           <second_editor />
         </state>
@@ -1147,9 +937,80 @@
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>10</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>CC3002-Tarea2</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>10</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited />
           <splitter-proportions>
             <option name="proportions">
               <list>
