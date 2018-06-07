@@ -18,17 +18,17 @@ La única clase contenida en __controller__, en la cual se organiza a todos los 
 elementos. Específicamente, se encarga de fiscalizar las interacciones entre distintos objetos;
 contiene el tablero, las instancias de bonus y almacena la cantidad de vidas y puntaje en una partida.
  
-Se vale de la interfaz __Observer__ para enterarse de cuándo los elementos del juego requieren 
-que se realice un cambio en el estado de éste, ya sea para activar algún evento o directamente 
-actualizar el valor de una variable. El registro de este __Observer__ para cada elemento __Observable__
-se efectúa dentro del constructor de esta clase.
+Basa su funcionamiento en el patrón de diseño _Observer_, esto es, la interfaz __Observer__ para enterarse
+de cuándo los elementos del juego requieren que se realice un cambio en el estado de éste, ya sea para activar
+algún evento o directamente actualizar el valor de una variable. El registro de este __Observer__
+para cada elemento __Observable__ se efectúa dentro del constructor de esta clase.
 
 ### Facade
 
 #### HomeworkTwoFacade:
 Esta clase es la que se manipulará durante la tarea siguiente para crear una Interfaz Gráfica de Usuario
 de este juego.
-El uso del patrón de diseño __Facade__ permite que se oculte la mayor parte de las operaciones lógicas,
+El uso del patrón de diseño _Facade_ permite que se oculte la mayor parte de las operaciones lógicas,
 limitándose a enseñar el estado de los elementos y llamar métodos dependiendo del efecto que tenga 
 que el usuario entre en contacto con algún objeto del tablero.
 
@@ -44,7 +44,7 @@ eventos particulares al cumplirse ciertos requisitos (golpear cierto elemento y 
 
 Compuesto por los siguientes archivos:
 * `AbstractBonus`
-* `Bonus` (Interfaz)
+* `Bonus` _(Interfaz)_
 * `DropTargetBonus`
 * `ExtraBallBonus`
 * `JackPotBonus`
@@ -52,21 +52,21 @@ Compuesto por los siguientes archivos:
 La interfaz especifica los métodos que todos los tipos de bonus deben poseer, la clase abstracta detalla
 la función de aquellos métodos que son comunes a todos los tipos de bonus e implementa la interfaz
 __Observable__ para que sea posible vigilar cualquier cambio de estado que puedan producir.
-Finalmente, los tres tipos de bonus determinan los efectos que produce cada uno y notifican a
-__Game__ (mediante `notifyObservers`) cuando se debe sumar puntaje o vidas.
+Finalmente, los tres tipos de bonus determinan los efectos que produce activar cada uno (`trigger`) y
+notifican a __Game__ (mediante `notifyObservers`) cuando se debe sumar puntaje o vidas.
 
 #### GameElements
 
 Incluye la interfaz __Hittable__, que contiene los métodos que debe tener un objeto golpeable, y
 la interfaz __Visitor__ (que hereda a __Hittable__) para comunicar de forma ordenada el evento que
-se espera que se active en __Game__, esto mediante el patrón de diseño _Visitor_ y _Double Dispatch_.
+se espera que se active en __Game__, esto mediante _Double Dispatch_ y el patrón de diseño _Visitor_.
 
 La estructura de los elementos del juego es similar a la que ya se explicó en __Bonus__:
 la interfaz especifica los métodos que deben poseer todos los tipos de bumpers/targets,
-la clase abstracta detalla la función de aquellos métodos que son comunes a todos los tipos e implementa
-la interfaz __Observable__ para que sea posible vigilar cualquier cambio de estado que puedan producir.
-Por último, las clases de cada tipo de elemento determinan los efectos que produce cada uno y notifican
-a __Game__ (mediante `notifyObservers`) cuando se debe sumar puntaje o activar un __Bonus__.
+la clase abstracta detalla aquellos métodos que son comunes a todos los tipos e implementa
+la interfaz __Observable__ para vigilar cualquier cambio de estado que se pueda producir.
+Por último, las clases de cada tipo de elemento determinan los efectos de golpear cada uno (`hit`)
+y notifican a __Game__ (mediante `notifyObservers`) cuando se debe sumar puntaje o activar un __Bonus__.
 
 ##### Bumper:
 
@@ -75,7 +75,7 @@ un elemento de juego golpeable que puede subir de nivel y activar bonus del tipo
 
 Compuesto por los siguientes archivos:
 * `AbstractBumper`
-* `Bumper` (Interfaz)
+* `Bumper` _(Interfaz)_
 * `KickerBumper`
 * `PopBumper`
 
@@ -89,7 +89,7 @@ los elementos de juego golpeables que son desactivados una vez se golpean y pued
 
 Compuesto por los siguientes archivos:
 * `AbstractTarget`
-* `Target` (Interfaz)
+* `Target` _(Interfaz)_
 * `DropTarget`
 * `SpotTarget`
 
@@ -102,7 +102,7 @@ __DropTargetBonus__, mientras que el segundo invoca a __JackPotBonus__ cada vez 
 ##### PinballTable:
 
 Esta clase implementa todos los métodos necesarios (documentados en la interfaz __Table__) para crear,
-diferenciar, almacenar ordenadamente y manipular todos los elementos de juego.
+diferenciar, almacenar ordenadamente y emplear todos los elementos de juego.
 Así también, se encarga de asegurar una forma de distinguir los tableros creados de forma "oficial"
 (esto es, desde los métodos `newPlayableTableWithNoTargets` y `newFullPlayableTable` de __Game__) del resto.
 
@@ -111,13 +111,14 @@ Así también, se encarga de asegurar una forma de distinguir los tableros cread
 Dado que el programa todavía no tiene GUI, no tiene mucho sentido ejecutarlo hasta este punto.
 
 Por lo pronto, es posible exportar el código a su IDE de preferencia (se usó IntelliJ IDEA para su realización)
-y revisar el comportamiento de las clases a través de los test.
+y revisar el comportamiento de las clases a través de los tests.
 
 ### Testing
 
 Se distribuyó el testing de forma similar a la estructuración de las clases. Con un total de 6 archivos,
 se revisa en cada uno los tipos de elementos de juego y el funcionamiento correcto de los métodos de
-manipulación e interacción entre ellos. Ordenados de menor a mayor, se consideró los siguientes:
+manipulación e interacción entre ellos. Ordenados de menor a mayor (de los más simples a los compuestos),
+se consideró los siguientes:
 
 * GameElements:
     * `KickerBumperTest`
@@ -143,7 +144,7 @@ public void extraBallBonusActivation();
 public void jackPotBonusActivation();
 ```
 
-Así también, las notificaciones entre __Observer__ y __Observable__ de cada objeto se prueban solo en este
+Así también, las notificaciones entre __Observer__ y __Observable__ de cada elemento del juego se prueban solo en este
 test, en los métodos:
 ```
 @Test
@@ -170,7 +171,7 @@ pruebas ya realizadas en __GameTest__.
 ## Autores
 
 * Sofía Castro - _Implementación y testing_ - [cinnamontea](https://github.com/cinnamontea)
-* Juan-Pablo Silva - _Código base, la mayor parte de la estructura y documentación_ -
+* Juan-Pablo Silva - _Código base, la mayor parte de la estructura y documentación de interfaces y la clase Facade_ -
 [juanpablos](https://github.com/juanpablos)  
 
 
