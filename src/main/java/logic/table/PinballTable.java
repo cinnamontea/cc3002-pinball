@@ -87,14 +87,31 @@ public class PinballTable implements Table{
         this.targets = targetList;
     }
 
+    /**
+     * Gets the table's name.
+     *
+     * @return the name of this table
+     */
     public String getTableName() {
         return name;
     }
 
+    /**
+     * Gets the amount of {@link DropTarget} targets in the table.
+     *
+     * @return the number of DropTargets in this table
+     */
     public int getNumberOfDropTargets() {
         return numberOfDropTargets;
     }
 
+    /**
+     * Gets the number of {@link DropTarget} that are currently dropped.
+     * It looks over the first part of the targets list (where DropTargets are stored)
+     * and counts how many of them are inactive.
+     *
+     * @return the amount of inactive DropTargets in the table
+     */
     public int getCurrentlyDroppedDropTargets() {
         int inactiveDropTargets = 0;
         int index = 0;
@@ -107,14 +124,28 @@ public class PinballTable implements Table{
         return inactiveDropTargets;
     }
 
+    /**
+     * Gets the list where the table's bumpers are stored.
+     *
+     * @return every bumper in the table
+     */
     public List<Bumper> getBumpers() {
         return bumpers;
     }
 
+    /**
+     * Gets the list where the table's targets are stored.
+     *
+     * @return every target in the table
+     */
     public List<Target> getTargets() {
         return targets;
     }
 
+    /**
+     * Changes the state of every {@link DropTarget} in the table back to "active".
+     * It goes through the targets' list and reactivates any DropTargets that were dropped.
+     */
     public void resetDropTargets() {
         int index = 0;
         // DropTargets are the first [numberOfDropTargets] elements of the [targets] list.
@@ -125,6 +156,10 @@ public class PinballTable implements Table{
         }
     }
 
+    /**
+     * Levels up any bumpers that are not upgraded.
+     * It checks the bumpers' list and avoids any possibility of activating upgrading bonuses.
+     */
     public void upgradeAllBumpers() {
         int index = 0;
         while (index < bumpers.size()){
@@ -134,10 +169,20 @@ public class PinballTable implements Table{
         }
     }
 
+    /**
+     * Gets whether the table is considered playable or not.
+     *
+     * @return true if this table is playable, false otherwise
+     */
     public boolean isPlayableTable() {
         return isPlayable;
     }
 
+    /**
+     * Counts every {@link PopBumper} in the table's bumpers list.
+     *
+     * @return the number of PopBumpers in this table
+     */
     public int getNumberOfPopBumpers() {
         int numberOfPopBumpers = 0;
         int index = 0;
