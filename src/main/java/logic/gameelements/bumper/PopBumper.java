@@ -29,4 +29,9 @@ public class PopBumper extends AbstractBumper{
         this();
         random = new Random(seed);
     }
+
+    @Override
+    public boolean isPopBumper(){
+        return true;
+    }
 }

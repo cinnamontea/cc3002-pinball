@@ -112,4 +112,11 @@ public abstract class AbstractBumper extends Observable implements Bumper {
         game.getExtraBallBonus().trigger(game);
     }
 
+    public boolean isKickerBumper(){
+        return false;
+    }
+
+    public boolean isPopBumper(){
+        return false;
+    }
 }

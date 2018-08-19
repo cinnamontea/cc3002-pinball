@@ -22,5 +22,6 @@ public class DropTargetBonus extends AbstractBonus{
         game.getCurrentTable().upgradeAllBumpers();
         setChanged();
         notifyObservers(score);
+        game.getCurrentTable().resetDropTargets(); // T3 addition
     }
 }

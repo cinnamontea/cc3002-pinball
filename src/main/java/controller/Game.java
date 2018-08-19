@@ -151,6 +151,7 @@ public class Game implements Observer{
      */
     public void setCurrentTable(Table table) {
         this.currentTable = table;
+        this.currentAvailableBalls = 3; // addition for T3 (needed to start a new game in the same instance)
 
         List<Hittable> hittables = new ArrayList<>();
         hittables.addAll(table.getBumpers());
@@ -169,7 +170,9 @@ public class Game implements Observer{
      * @return the new number of available balls
      */
     public int lostABall() {
-        this.currentAvailableBalls--;
+        if (currentAvailableBalls!=0){
+            this.currentAvailableBalls--;
+        }
         return currentAvailableBalls;
     }
 
@@ -206,5 +209,14 @@ public class Game implements Observer{
     private void updateEvent(Hittable hittable){
         // This method works as the "accept" from a Visitor Pattern.
         hittable.visit(this);
+    }
+
+    /**
+     * Checks whether the game is over or not. A game is over when the number of available balls are 0.
+     *
+     * @return true if the game is over, false otherwise
+     */
+    public boolean gameOver() {
+        return getCurrentAvailableBalls() == 0;
     }
 }

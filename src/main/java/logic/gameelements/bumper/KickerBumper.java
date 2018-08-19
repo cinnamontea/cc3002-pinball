@@ -30,4 +30,9 @@ public class KickerBumper extends AbstractBumper{
         this();
         random = new Random(seed);
     }
+
+    @Override
+    public boolean isKickerBumper(){
+        return true;
+    }
 }

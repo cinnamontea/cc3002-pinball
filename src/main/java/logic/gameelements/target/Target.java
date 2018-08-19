@@ -21,4 +21,16 @@ public interface Target extends Hittable {
      * Resets the state of a target making it active again.
      */
     void reset();
+
+    /**
+     * Tells whether the target is a DropTarget.
+     * @return true if it's a DropTarget, false otherwise
+     */
+    boolean isDropTarget();
+
+    /**
+     * Tells whether the target is a SpotTarget.
+     * @return true if it's a SpotTarget, false otherwise
+     */
+    boolean isSpotTarget();
 }

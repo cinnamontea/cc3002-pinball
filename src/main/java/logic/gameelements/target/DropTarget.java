@@ -61,4 +61,9 @@ public class DropTarget extends AbstractTarget {
         if (game.getCurrentTable().getCurrentlyDroppedDropTargets() == game.getCurrentTable().getNumberOfDropTargets())
             game.getDropTargetBonus().trigger(game);
     }
+
+    @Override
+    public boolean isDropTarget(){
+        return true;
+    }
 }

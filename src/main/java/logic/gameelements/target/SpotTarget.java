@@ -29,4 +29,9 @@ public class SpotTarget extends AbstractTarget {
         // SpotTarget doesn't give any points by itself so I can omit this notification.
         game.getJackPotBonus().trigger(game);
     }
+
+    @Override
+    public boolean isSpotTarget(){
+        return true;
+    }
 }

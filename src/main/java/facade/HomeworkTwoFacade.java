@@ -8,7 +8,7 @@ import logic.table.Table;
 import java.util.List;
 
 /**
- * Facade class to expose the logic of the game to a GUI in the upcoming homework.
+ * Facade class to expose the logic of the game to a gui in the upcoming homework.
  *
  * @author Juan-Pablo Silva
  * @author sofia.castro
@@ -166,11 +166,11 @@ public class HomeworkTwoFacade {
     }
 
     /**
-     * Checks whether the game is over or not. A game is over when the number of available balls are 0.
+     * Checks whether the game has finished or not.
      *
      * @return true if the game is over, false otherwise
      */
     public boolean gameOver() {
-        return getAvailableBalls() == 0;
+        return game.gameOver();
     }
 }

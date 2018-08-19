@@ -41,4 +41,16 @@ public interface Bumper extends Hittable {
      * @return true if the upgrade was successful, false otherwise
      */
     boolean manualUpgrade();
+
+    /**
+     * Tells whether the bumper is a KickerBumper.
+     * @return true if it's a KickerBumper, false otherwise
+     */
+    boolean isKickerBumper();
+
+    /**
+     * Tells whether the bumper is a PopBumper.
+     * @return true if it's a PopBumper, false otherwise
+     */
+    boolean isPopBumper();
 }

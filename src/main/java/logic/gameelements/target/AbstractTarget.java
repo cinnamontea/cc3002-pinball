@@ -48,4 +48,12 @@ public abstract class AbstractTarget extends Observable implements Target {
      * @see SpotTarget#hit()
      */
     public abstract int hit();
+
+    public boolean isDropTarget(){
+        return false;
+    }
+
+    public boolean isSpotTarget(){
+        return false;
+    }
 }
