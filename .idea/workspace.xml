@@ -2,27 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fbb67918-40e8-4e04-86b0-a2dcc37ef619" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CC3002-Tarea2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CC3002-Tarea2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Package bonus dep.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Package bonus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Package controller and facade dep.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Package gameelements T3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Package gameelements dep.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Package gameelements.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Package gui.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Package table dep.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Package table.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages controller and facade.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/facade/HomeworkTwoFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/facade/HomeworkTwoFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/bonus/DropTargetBonus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/bonus/DropTargetBonus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/AbstractBumper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/AbstractBumper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/Bumper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/Bumper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/KickerBumper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/KickerBumper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/PopBumper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/PopBumper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/gameelements/target/AbstractTarget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/gameelements/target/AbstractTarget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/gameelements/target/DropTarget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/gameelements/target/DropTarget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/gameelements/target/SpotTarget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/gameelements/target/SpotTarget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/gameelements/target/Target.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/gameelements/target/Target.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/facade/HomeworkTwoFacade.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/facade/HomeworkTwoFacade.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logic/bonus/DropTargetBonus.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logic/bonus/DropTargetBonus.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logic/table/PinballTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logic/table/PinballTable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/controller/GameTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/controller/GameTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/FXGL-19-ago-2018-13.12.33.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/FlipperComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/FlipperComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/GameFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/GameFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/PinballApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/PinballApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/PinballApp$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/PinballApp$3.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -49,8 +45,8 @@
       <file leaf-file-name="PinballApp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/gui/PinballApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="93" column="52" lean-forward="true" selection-start-line="93" selection-start-column="52" selection-end-line="93" selection-end-column="52" />
+            <state relative-caret-position="245">
+              <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1087#1088#0" expanded="true" />
@@ -70,12 +66,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="160">
-                <caret line="162" lean-forward="true" selection-start-line="162" selection-end-line="162" />
+              <first_editor relative-caret-position="174">
+                <caret line="169" column="18" lean-forward="true" selection-start-line="169" selection-start-column="18" selection-end-line="169" selection-end-column="18" />
               </first_editor>
               <second_editor />
             </state>
@@ -91,63 +87,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbstractTarget.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/logic/gameelements/target/AbstractTarget.java">
+      <file leaf-file-name="FlipperComponent.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gui/FlipperComponent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="40" column="7" lean-forward="true" selection-start-line="40" selection-start-column="7" selection-end-line="40" selection-end-column="7" />
+            <state relative-caret-position="282">
+              <caret line="38" column="23" lean-forward="true" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JAVA/gui" pinned="false" current-in-tab="false">
-        <entry file="uml://JAVA/gui">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>JAVA</ID>
-              <OriginalElement>gui</OriginalElement>
-              <nodes>
-                <node x="264.25" y="578.0">gui.PinballApp</node>
-                <node x="364.0" y="168.0">facade.HomeworkTwoFacade</node>
-                <node x="0.0" y="212.0">gui.GameFactory</node>
-                <node x="152.79166666666669" y="0.0">gui.FlipperComponent</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="gui.PinballApp" target="gui.GameFactory">
-                  <point x="-106.125" y="-92.0" />
-                  <point x="299.625" y="553.0" />
-                  <point x="171.5" y="553.0" />
-                  <point x="0.0" y="136.0" />
-                </edge>
-                <edge source="gui.GameFactory" target="gui.FlipperComponent">
-                  <point x="85.75" y="-136.0" />
-                  <point x="257.25" y="143.0" />
-                  <point x="247.79166666666669" y="143.0" />
-                  <point x="0.0" y="59.0" />
-                </edge>
-                <edge source="gui.PinballApp" target="gui.FlipperComponent">
-                  <point x="-35.375" y="-92.0" />
-                  <point x="370.375" y="553.0" />
-                  <point x="353.5" y="553.0" />
-                  <point x="353.5" y="143.0" />
-                  <point x="311.12500000000006" y="143.0" />
-                  <point x="63.33333333333337" y="59.0" />
-                </edge>
-                <edge source="gui.PinballApp" target="facade.HomeworkTwoFacade">
-                  <point x="106.125" y="-92.0" />
-                  <point x="511.875" y="553.0" />
-                  <point x="646.0" y="553.0" />
-                  <point x="94.0" y="180.0" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="1.0" x="-86.0" y="226.0" />
-              <SelectedNodes />
-              <Categories>
-                <Category>Methods</Category>
-              </Categories>
-              <SCOPE>All</SCOPE>
-              <VISIBILITY>private</VISIBILITY>
+      <file leaf-file-name="AbstractTarget.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/logic/gameelements/target/AbstractTarget.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="388">
+              <caret line="40" column="7" selection-start-line="40" selection-start-column="7" selection-end-line="40" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -155,17 +111,17 @@
       <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controller/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-810">
-              <caret line="152" column="34" lean-forward="true" selection-start-line="152" selection-start-column="34" selection-end-line="152" selection-end-column="34" />
+            <state relative-caret-position="159">
+              <caret line="209" column="37" lean-forward="true" selection-start-line="209" selection-start-column="37" selection-end-line="209" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameFactory.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GameFactory.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/gui/GameFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1207">
-              <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+            <state relative-caret-position="1326">
+              <caret line="78" column="83" lean-forward="true" selection-start-line="78" selection-start-column="83" selection-end-line="78" selection-end-column="83" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -228,11 +184,11 @@
         <option value="$PROJECT_DIR$/src/main/java/logic/gameelements/target/Target.java" />
         <option value="$PROJECT_DIR$/src/main/java/logic/gameelements/target/AbstractTarget.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/ExampleGameFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gui/GameFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gui/FlipperComponent.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/Game.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/PinballApp.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/main/java/gui/GameFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gui/FlipperComponent.java" />
       </list>
     </option>
   </component>
@@ -665,7 +621,7 @@
       <workItem from="1533325935489" duration="10065000" />
       <workItem from="1533428456816" duration="13286000" />
       <workItem from="1533668540728" duration="6000" />
-      <workItem from="1534609645158" duration="26678000" />
+      <workItem from="1534609645158" duration="28870000" />
     </task>
     <servers />
   </component>
@@ -702,7 +658,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="270370000" />
+    <option name="totallyTimeSpent" value="272562000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -718,12 +674,12 @@
       <window_info anchor="right" id="Maven Projects" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.49926794" visible="true" weight="0.2551181" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49926794" visible="true" weight="0.2551181" />
       <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.329429" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.9590551" visible="true" weight="0.18740849" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.9590551" visible="true" weight="0.18740849" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -760,7 +716,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.560/Bumper.java" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.605/Table.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/logic/gameelements/target/SpotTargetTest.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1349,18 +1304,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/FlipperComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#987#988#0" expanded="true" />
-            <element signature="e#1015#1016#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/logic/gameelements/target/SpotTarget.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="74">
@@ -1371,7 +1314,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/logic/gameelements/target/AbstractTarget.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="388">
-          <caret line="40" column="7" lean-forward="true" selection-start-line="40" selection-start-column="7" selection-end-line="40" selection-end-column="7" />
+          <caret line="40" column="7" selection-start-line="40" selection-start-column="7" selection-end-line="40" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1396,16 +1339,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/GameFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1207">
-          <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/logic/table/PinballTable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="213">
@@ -1413,17 +1346,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-810">
-          <caret line="152" column="34" lean-forward="true" selection-start-line="152" selection-start-column="34" selection-end-line="152" selection-end-column="34" />
+    <entry file="uml://JAVA/BigTest.BigTestT2">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>BigTest.BigTestT2</OriginalElement>
+          <nodes>
+            <node x="" y="">BigTest.BigTestT2</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="50.0" y="15.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="174">
+            <caret line="169" column="18" lean-forward="true" selection-start-line="169" selection-start-column="18" selection-end-line="169" selection-end-column="18" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gui/PinballApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="93" column="52" lean-forward="true" selection-start-line="93" selection-start-column="52" selection-end-line="93" selection-end-column="52" />
+        <state relative-caret-position="245">
+          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1087#1088#0" expanded="true" />
@@ -1442,13 +1396,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="160">
-            <caret line="162" lean-forward="true" selection-start-line="162" selection-end-line="162" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="209" column="37" lean-forward="true" selection-start-line="209" selection-start-column="37" selection-end-line="209" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/FlipperComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="38" column="23" lean-forward="true" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/GameFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1326">
+          <caret line="78" column="83" lean-forward="true" selection-start-line="78" selection-start-column="83" selection-end-line="78" selection-end-column="83" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

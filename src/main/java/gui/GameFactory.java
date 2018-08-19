@@ -20,7 +20,7 @@ import javafx.scene.shape.Rectangle;
  * @author sofia.castro
  */
 
-public final class GameFactory {
+final class GameFactory {
 
     public enum ExampleType {
         L_FLIPPER,
@@ -31,10 +31,10 @@ public final class GameFactory {
         KICKER_BUMPER,
         POP_BUMPER,
         DROP_TARGET,
-        SPOT_TARGET;
+        SPOT_TARGET
     }
 
-    public static Entity newFlipper() {
+    private static Entity newFlipper() {
         Entity flipper = Entities.builder()
                 .viewFromNodeWithBBox(new Rectangle(100, 30, Color.BLUE))
                 .with(new CollidableComponent(true))
@@ -47,31 +47,31 @@ public final class GameFactory {
         return flipper;
     }
 
-    public static Entity newRFlipper(double x, double y) {
+    static Entity newRFlipper() {
         Entity flipper = newFlipper();
-        flipper.setPosition(x,y);
+        flipper.setPosition((double) 270, (double) 500);
         flipper.setType(ExampleType.R_FLIPPER);
         flipper.setRotation(-15);
         return flipper;
     }
 
-    public static Entity newLFlipper(double x, double y) {
+    static Entity newLFlipper() {
         Entity flipper = newFlipper();
-        flipper.setPosition(x,y);
+        flipper.setPosition((double) 120, (double) 500);
         flipper.setType(ExampleType.L_FLIPPER);
         flipper.setRotation(15);
         flipper.getComponent(FlipperComponent.class).changeSides();
         return flipper;
     }
 
-    public static Entity newBackground() {
+    static Entity newBackground() {
         return Entities.builder()
                 .viewFromNode(new Rectangle(600, 600, Color.GAINSBORO))
                 .renderLayer(RenderLayer.BACKGROUND)
                 .build();
     }
 
-    public static Entity newBall(double x, double y) {
+    static Entity newBall(double x, double y) {
         PhysicsComponent physics = new PhysicsComponent();
         physics.setBodyType(BodyType.DYNAMIC);
         physics.setFixtureDef(
@@ -86,14 +86,14 @@ public final class GameFactory {
                 .build();
     }
 
-    public static Entity newWalls() {
+    static Entity newWalls() {
         Entity walls = Entities.makeScreenBounds(100);
         walls.setType(ExampleType.WALL);
         walls.addComponent(new CollidableComponent(true));
         return walls;
     }
 
-    public static Entity newKickerBumper(double x, double y){
+    static Entity newKickerBumper(double x, double y){
         Polygon triangle = new Polygon();
         triangle.getPoints().addAll(0.0, 0.0, 30.0, 80.0, 0.0, 70.0);
         triangle.setFill(Color.DARKGREEN);
@@ -110,7 +110,7 @@ public final class GameFactory {
         return bumper;
     }
 
-    public static Entity newPopBumper(double x, double y){
+    static Entity newPopBumper(double x, double y){
         Entity bumper = Entities.builder()
                 .at(x,y)
                 .type(ExampleType.POP_BUMPER)
@@ -123,7 +123,7 @@ public final class GameFactory {
         return bumper;
     }
 
-    public static Entity newDropTarget(double x, double y){
+    static Entity newDropTarget(double x, double y){
         Entity target = Entities.builder()
                 .at(x,y)
                 .type(ExampleType.DROP_TARGET)
@@ -136,7 +136,7 @@ public final class GameFactory {
         return target;
     }
 
-    public static Entity newSpotTarget(double x, double y){
+    static Entity newSpotTarget(double x, double y){
         Entity target = Entities.builder()
                 .at(x,y)
                 .type(ExampleType.SPOT_TARGET)
@@ -149,7 +149,7 @@ public final class GameFactory {
         return target;
     }
 
-    public static Entity newInnerWall(double x, double y, int w, int h, double r){
+    static Entity newInnerWall(double x, double y, int w, int h, double r){
         Entity wall = Entities.builder()
                 .at(x,y)
                 .viewFromNodeWithBBox(new Rectangle(w,h,Color.SLATEBLUE))

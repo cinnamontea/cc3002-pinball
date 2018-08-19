@@ -164,6 +164,9 @@ public void spotTargetInteraction();
 Por otro lado, no hay tests de la clase __HomeworkTwoFacade__ dado que resultaría en repetir las mismas
 pruebas ya realizadas en __GameTest__.
 
+Para la Tarea 3 se agregaron los tests entregados en U-Cursos para la revisión de la lógica del juego.
+Se encuentran en el paquete __BigTest__.
+
 ## Avances Tarea 3
 
 Dado que la interfaz no se completó en su totalidad se decidió enlistar aquí las partes que sí se
@@ -180,42 +183,45 @@ encuentran funcionales en el momento de la última actualización.
     * Reiniciar cantidad de vidas: Cada vez que se modifica la mesa, el contador de vidas vuelve a 3
     (ver `setCurrentTable` en __Game__).
     
-* Elementos en pantalla: Existe una interfaz gráfica incompleta almacenada en el paquete __gui__, por ahora compuesta
+* Elementos en pantalla:
+Existe una interfaz gráfica incompleta almacenada en el paquete __gui__, por ahora compuesta
 por tres clases, __PinballApp__, que contiene lo principal, __GameFactory__, una fábrica que posee métodos para crear
 cada tipo de __Entity__, y __FlipperComponent__, que almacena las acciones que realizan los Flippers al momento de
 recibirse un input del usuario.  
-    * Elementos en pantalla:
-        * Existen dos Flipper en el juego, Su apariencia es la de un rectángulo azul.
-        * Bolas: Solo puede haber una bola en juego, la que rebota con todos los otros objetos y puede caer
-        por el borde inferior de la pantalla y desaparecer. Son círculos de color rosado.
-        * Hittables: Hay cuatro tipos:
-            * Kicker Bumpers: triángulos de color verde.
-            * Pop Bumpers: círculos de color naranja/rojizo.
-            * Drop Targets: rectángulos pequeños de color morado claro.
-            * Spot Targets: cuadrados pequeños de color blanco.
-        * Información: En el lado derecho de la pantalla existe espacio para ubicar la información del juego.
-        De momento solo hay un contador de vidas que reinicia con cada mesa nueva.
-    * Acciones mínimas:
-        * Activar flipper:  Hay un Flipper izquierdo y otro derecho, controlados con las teclas A y D respectivamente.
-        Al mantener presionado se fija en la posición más alta y al soltarlo regresa abajo.
-        A veces se producen problemas con los puntos fijos porque dependen de un componente físico.
-        * Nueva bola: Al presionar la tecla espacio aparece una nueva bola en juego. Esto solo funciona si
-        no hay otra ya en existencia.
-        * Nueva mesa: Se puede crear una mesa nueva de Hittables con la tecla N. 
-    * Interacciones en pantalla:
-        * Flippers: El movimiento de los Flippers es consistente con lo pedido, controlable mediante los botones A y D.
-        * Mesas: Se fijó un total de 5 bumpers (con 50% de probablidad de que salga cada tipo) y 4 Targets,
-        donde 2 de ellos son DropTargets. Sus posiciones en la mesa se deciden al azar.
-        * Murallas: La bola rebota al encontrarse con un borde de la pantalla (que no sea el inferior) o con un bloque
-        definido como _Inner Wall_, esto es, paredes visibles y colisionables dentro del juego (de color morado).
-        * Rebotes: De la misma forma que lo anterior, la bola rebota al chocar con un Hittable, independente de su tipo.
-        * Invocación de la bola: Siempre que se llama una bola nueva esta aparece sobre el Flipper derecho con velocidad
-        suficiente para salir disparada hacia arriba a la derecha.
-        * Perder bola: El contador de la bolas disponibles disminuye tanto en la instancia de __HomeworkTwoFacade__
-        como en la interfaz cuando esta cae por el borde inferior de la pantalla. Así también, desaparece de los
-        elementos del juego en vez de solo estar fuera del cuadro visible.
-        * Ayuda nueva mesa: Al establecer una mesa nueva se reinician los elementos, es decir, desaparecen los 
-        __Hittable__ de la mesa anterior y se reinicia el contador de la interfaz.
+
+   * Flippers: Existen dos Flipper en el juego, Su apariencia es la de un rectángulo azul.
+   * Bolas: Solo puede haber una bola en juego, la que rebota con todos los otros objetos y puede caer
+     por el borde inferior de la pantalla y desaparecer. Son círculos de color rosado.
+   * Hittables: Hay cuatro tipos:
+        * Kicker Bumpers: triángulos de color verde.
+        * Pop Bumpers: círculos de color naranja/rojizo.
+        * Drop Targets: rectángulos pequeños de color morado claro.
+        * Spot Targets: cuadrados pequeños de color blanco.
+   * Información: En el lado derecho de la pantalla existe espacio para ubicar la información del juego.
+     De momento solo hay un contador de vidas que reinicia con cada mesa nueva.
+
+* Acciones mínimas
+   * Activar flipper:  Hay un Flipper izquierdo y otro derecho, controlados con las teclas A y D respectivamente.
+     Al mantener presionado se fija en la posición más alta y al soltarlo regresa abajo.
+     A veces se producen problemas con los puntos fijos porque dependen de un componente físico.
+   * Nueva bola: Al presionar la tecla espacio aparece una nueva bola en juego. Esto solo funciona si
+     no hay otra ya en existencia.
+   * Nueva mesa: Se puede crear una mesa nueva de Hittables con la tecla N. 
+
+* Interacciones en pantalla
+   * Flippers: El movimiento de los Flippers es consistente con lo pedido, controlable mediante los botones A y D.
+   * Mesas: Se fijó un total de 5 bumpers (con 50% de probablidad de que salga cada tipo) y 4 Targets,
+     donde 2 de ellos son DropTargets. Sus posiciones en la mesa se deciden al azar.
+   * Murallas: La bola rebota al encontrarse con un borde de la pantalla (que no sea el inferior) o con un bloque
+     definido como _Inner Wall_, esto es, paredes visibles y colisionables dentro del juego (de color morado).
+   * Rebotes: De la misma forma que lo anterior, la bola rebota al chocar con un Hittable, independente de su tipo.
+   * Invocación de la bola: Siempre que se llama una bola nueva esta aparece sobre el Flipper derecho con velocidad
+     suficiente para salir disparada hacia arriba a la derecha.
+   * Perder bola: El contador de la bolas disponibles disminuye tanto en la instancia de __HomeworkTwoFacade__
+     como en la interfaz cuando esta cae por el borde inferior de la pantalla. Así también, desaparece de los
+     elementos del juego en vez de solo estar fuera del cuadro visible.
+   * Ayuda nueva mesa: Al establecer una mesa nueva se reinician los elementos, es decir, desaparecen los 
+     __Hittable__ de la mesa anterior y se reinicia el contador de la interfaz.
     
 
 ## Desarrollado Con

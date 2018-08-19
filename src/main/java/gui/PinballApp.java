@@ -47,8 +47,8 @@ public class PinballApp extends GameApplication {
     @Override
     protected void initGame() {
         Entity bg = newBackground();
-        leftFlipper = newLFlipper(120,500);
-        rightFlipper = newRFlipper(270,500);
+        leftFlipper = newLFlipper();
+        rightFlipper = newRFlipper();
         Entity walls = newWalls();
         Entity leftTriangle = newInnerWall(-50,540,220,100,30);
         Entity rightTriangle = newInnerWall(320,540,220,100,-30);

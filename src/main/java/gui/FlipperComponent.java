@@ -28,19 +28,19 @@ public class FlipperComponent extends Component {
             isInMin = true;
     }
 
-    public void forwardSpin(){
+    void forwardSpin(){
         isInMin = false;
         if (side*entity.getRotation()>=20)
             isInMax = true;
         physics.setAngularVelocity(side*15);
     }
 
-    public void backwardSpin(){
+    void backwardSpin(){
         isInMax =false;
         physics.setAngularVelocity(side*-15);
     }
 
-    public void changeSides(){
+    void changeSides(){
         side = -side;
     }
 }
